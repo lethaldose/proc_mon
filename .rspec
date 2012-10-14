@@ -1,0 +1,7 @@
+--colour
+--format progress
+--format html
+--out spec/reports/index.html
+--format RspecJunitFormatter
+--out spec/reports/rspec.xml
+--profile
