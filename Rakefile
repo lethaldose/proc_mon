@@ -1,4 +1,3 @@
-require 'bundler/setup'
 require 'rspec/core/rake_task'
 
 desc "Run all RSpec tests"
