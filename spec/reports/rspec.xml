@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="3" failures="0" errors="0" time="0.002358" timestamp="2012-10-14T21:30:29+05:30">
-  <properties/>
-  <testcase classname="./spec/lib/process_info_spec.rb" name="ProcMon::ProcessInfo should return a list of processes" time="0.000822"/>
-  <testcase classname="./spec/lib/process_info_spec.rb" name="ProcMon::ProcessInfo should intialize process info" time="0.000157"/>
-  <testcase classname="./spec/lib/process_info_spec.rb" name="ProcMon::ProcessInfo should give json" time="0.000185"/>
-</testsuite>
