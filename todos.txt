@@ -2,4 +2,5 @@ cleanup javascript
 specs for app/websocket impl
 UI polish
 config should load files properly at one place - code duplication -> wesocket, app, spec_helper
-
+organize js in vendor and app specific
+make table header look sortable links

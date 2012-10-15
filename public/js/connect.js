@@ -3,7 +3,7 @@ $(function () {
   var socket = function () {
 
     function updateProcInfo(string) {
-      var element = $("body .container table");
+      var element = $("body .container table tbody");
       element.replaceWith(string);
     }
 

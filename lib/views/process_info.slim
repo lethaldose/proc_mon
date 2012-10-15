@@ -1,2 +1,10 @@
 h2 Current Running Processes
-== slim :_process_table, locals: {procs: procs}
+table.table.table-hover.proc-info
+  thead
+    tr
+      th #Pid
+      th User
+      th.type-int %Cpu
+      th.type-int %Mem
+      th Args
+  == slim :_process_table_body, locals: {procs: procs}
