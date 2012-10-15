@@ -5,6 +5,7 @@ $(function () {
     function updateProcInfo(string) {
       var element = $("body .container table tbody");
       element.replaceWith(string);
+      $('th.sort').click();
     }
 
     var Socket = "MozWebSocket" in window ? MozWebSocket : WebSocket;
