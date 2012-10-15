@@ -4,7 +4,7 @@ $: << File.dirname(__FILE__)
 require 'lib/process_info'
 
 def render_proc_info
-  contents = File.open("lib/views/process_info.slim", "rb").read
+  contents = File.open("lib/views/_process_table.slim", "rb").read
   template = Slim::Template.new { contents }
   procs = ProcMon::ProcessInfo.all
   template.render procs, {procs:procs}

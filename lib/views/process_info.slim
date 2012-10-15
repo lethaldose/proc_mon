@@ -1,18 +1,2 @@
 h2 Current Running Processes
-
-table.table.table-hover
-  thead
-    tr
-      th #Pid
-      th User
-      th %Cpu
-      th %Mem
-      th Args
-  tbody
-    -  for pinfo in procs
-      tr
-        td = pinfo.pid
-        td = pinfo.user
-        td = pinfo.cpu
-        td = pinfo.mem
-        td = pinfo.args
+== slim :_process_table, locals: {procs: procs}
