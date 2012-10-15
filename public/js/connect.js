@@ -3,8 +3,8 @@ $(function () {
   var socket = function () {
 
     function updateProcInfo(string) {
-      var element = $("body");
-      element.html(string);
+      var element = $("body .container table");
+      element.replaceWith(string);
     }
 
     var Socket = "MozWebSocket" in window ? MozWebSocket : WebSocket;
