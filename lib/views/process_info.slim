@@ -1,5 +1,3 @@
-script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'
-
 title Process Monitor
 
 h1 Process Info Monitor
@@ -20,25 +18,3 @@ table
         td = pinfo.cpu
         td = pinfo.mem
         td = pinfo.args
-
-javascript:
-   function init() {
-        function updateProcInfo(string) {
-          var element = $("body");
-          element.html(string);
-        }
-
-        var Socket = "MozWebSocket" in window ? MozWebSocket : WebSocket;
-        var ws = new Socket("ws://localhost:8080/");
-        ws.onmessage = function(evt) {
-          console.log("Message: " + evt.data);
-          updateProcInfo(evt.data);
-        };
-        ws.onclose = function() {
-          console.log("socket closed");
-        };
-        ws.onopen = function() {
-          console.log("connected...");
-        };
-      };
-      init();

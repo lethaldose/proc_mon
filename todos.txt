@@ -1,0 +1,6 @@
+cleanup javascript
+extract layout
+specs for app/websocket impl
+UI polish
+config should load files properly at one place - code duplication -> wesocket, app, spec_helper
+
