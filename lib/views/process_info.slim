@@ -4,7 +4,11 @@ table.table.table-hover.proc-info
     tr
       th #Pid
       th User
-      th.type-int %Cpu
-      th.type-int %Mem
+      th.type-int
+         i.icon-chevron-down
+         = "%Cpu"
+      th.type-int
+         i
+         = "%Mem"
       th Args
   == slim :_process_table_body, locals: {procs: procs}

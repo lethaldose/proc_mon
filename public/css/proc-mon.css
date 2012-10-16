@@ -1,0 +1,8 @@
+.toggle{
+  background: url("/assets/collapse.png") no-repeat scroll right 5px transparent;
+}
+
+.toggle.expand{
+  background: url("/assets/dropdown.png") no-repeat scroll right 6px transparent;
+}
+

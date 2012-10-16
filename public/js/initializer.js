@@ -1,9 +1,17 @@
 $(function () {
+  $('table.proc-info').stupidtable();
 
   $('th.type-int').click(function(){
-    $('th').removeClass('sort');
-    $(this).addClass('sort');
-  });
+    $("th.type-int i").removeClass('icon-chevron-down icon-chevron-up');
 
-  $('table.proc-info').stupidtable();
+    var element = $(this);
+    if(element.hasClass('asc') == true)
+     {
+       element.find('i').addClass('icon-chevron-up');
+     }
+     else
+     {
+       element.find('i').addClass('icon-chevron-down');
+     }
+  });
 });
